@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Title>Valobtify.EFCore.SqlServer</Title>
+        <Description>Configure your single-value objects for the database, including applying data annotations like MaxLength and performing conversions automatically .</Description>
+        <PackageIcon>Valobtify_Logo.png</PackageIcon>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseFile>LICENCE</PackageLicenseFile>
+        <RepositoryUrl>https://github.com/Valobtify/Valobtify.EFCore.SqlServer</RepositoryUrl>
+        <PackageTags>SqlServer;EFCore;C#;Valobtify;database; </PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Include="..\LICENCE">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+      <None Include="..\README.md">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+      <None Include="..\Valobtify_Logo.png">
+        <Pack>True</Pack>
+        <PackagePath>\</PackagePath>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.0" />
+      <PackageReference Include="Valobtify.EFCore.Core" Version="1.0.0" />
+    </ItemGroup>
+
+</Project>
